@@ -17,7 +17,7 @@ const BookingInvoice = () => {
 
     let content = null;
     if (isLoading) content = <div>Loading ...</div>
-    if (!isLoading && isError) content = <div>Something went Wrong!</div>
+    if (!isLoading && isError) content = <div>Sorry Backend is Down!</div>
     if (!isLoading && !isError && !data) content = <Empty />
     if (!isLoading && !isError && data) content =
         <>
